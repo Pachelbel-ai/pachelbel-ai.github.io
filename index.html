@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pachelbel.ai - Innovation in Progress</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --bg-deep: #0a192f;
+      --bg-soft: #112240;
+      --text-title: #ccd6f6;
+      --text-body: #8892b0;
+      --accent: #64ffda;
+      --white: #ffffff;
+      --max-width: 900px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-deep);
+      color: var(--text-body);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      width: 100%;
+      background-color: var(--bg-soft);
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(100, 255, 218, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Background accent */
+    .container::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(100, 255, 218, 0.05) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .bilingual-tag {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    h1 {
+      font-family: 'Urbanist', sans-serif;
+      font-size: 48px;
+      color: var(--text-title);
+      margin-bottom: 15px;
+      letter-spacing: -1px;
+    }
+
+    .hero-subtitle {
+      font-size: 18px;
+      color: var(--text-body);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .divider {
+      height: 1px;
+      background: rgba(204, 214, 246, 0.1);
+      margin: 40px 0;
+    }
+
+    /* Grid Layout for Compressed Sections */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .section-title {
+      font-family: 'Urbanist', sans-serif;
+      font-size: 20px;
+      color: var(--accent);
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .content-block h3 {
+      font-size: 18px;
+      color: var(--text-title);
+      margin-bottom: 10px;
+    }
+
+    .content-block p {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+    /* Address Section */
+    .address-section {
+      background: rgba(10, 25, 47, 0.5);
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid rgba(100, 255, 218, 0.05);
+    }
+
+    .address-item {
+      margin-bottom: 20px;
+    }
+
+    .address-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .address-label {
+      font-size: 11px;
+      color: var(--accent);
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .address-text {
+      font-size: 15px;
+      color: var(--text-title);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .contact-email {
+      font-size: 20px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+
+    .contact-email:hover {
+      opacity: 0.8;
+    }
+
+    .footer-note {
+      font-size: 13px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <span class="bilingual-tag">준비 중 / Under Construction</span>
+      <h1>Pachelbel.ai</h1>
+      <p class="hero-subtitle">
+        기술과 인간의 조화를 위한 지능의 미래 반도체를 설계합니다.<br>
+        Defining the Future of Physical Intelligence Through Harmony.
+      </p>
+    </header>
+
+    <div class="grid">
+      <div class="content-block">
+        <div class="section-title"><i class="fa-solid fa-microchip"></i> Who We Are</div>
+        <p>파헬벨은 인공지능 기술의 정교함을 바탕으로 복잡한 비즈니스 문제를 해결하고, 지속 가능한 성장을 도모하는 <strong>AI 반도체 솔루션 전문 기업</strong>입니다.</p>
+        <p>Innovation through harmony, just like our name suggests.</p>
+      </div>
+
+      <div class="content-block">
+        <div class="section-title"><i class="fa-solid fa-spinner"></i> Website Status</div>
+        <p>글로벌 파트너들을 위해 새로운 디지털 경험을 구축 중입니다. 곧 찾아뵙겠습니다.</p>
+        <p>We are currently building a new digital experience to better serve our global partners. Stay tuned for our
+          official launch.</p>
+      </div>
+    </div>
+
+    <div class="address-section">
+      <div class="section-title"><i class="fa-solid fa-location-dot"></i> 위치 / Office Location</div>
+      <div class="address-item">
+        <div class="address-label">주소</div>
+        <div class="address-text">경기도 광명시 일직로 43, A동 23층 09호(일직동, GIDC) 14322</div>
+      </div>
+      <div class="address-item">
+        <div class="address-label">Address</div>
+        <div class="address-text">#2309, Bldg. A, GIDC, 43, Iljik-ro, Gwangmyeong-si, Gyeonggi-do, Republic of Korea
+          14322</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <footer>
+      <div class="section-title" style="justify-content: center;"><i class="fa-solid fa-envelope"></i> Get in Touch
+      </div>
+      <a href="mailto:contact@pachelbel.ai" class="contact-email">contact@pachelbel.ai</a>
+      <p class="footer-note">Thank you for your patience and interest. 관심과 성원에 감사드립니다.</p>
+    </footer>
+  </div>
+</body>
+
+</html>
